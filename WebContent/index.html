@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello HTML</title>
+</head>
+<body>
+	<h1>Hello, HTML</h1>
+	<p>이 페이지는 정적인 HTML입니다.</p>
+	<p>작성자: 김유정</p>
+	<img src="./images/도비.jpg" alt="도비" title="도비"
+	width="600" height="300" />
+	
+	<br/> <!-- 강제 개행 -->
+	<!-- 링크 -->
+	<a href="table.html">테이블 연습</a>
+	<br/>
+	<a href="user_form.html">입력 폼 연습</a>
+	<br/>
+	<a href="hello.jsp?name=KYJ">GET 요청 파라미터 전달</a>
+	<br/>
+	<h3>HelloServlet 호출</h3>
+	<a href="/HelloWorld/hs?name=Servlet">GET 요청 Servlet 호출</a>
+	<br/>
+	<h3>HelloServlet POST 호출</h3>
+	<!-- action: 해당 폼을 처리할 수 ㅇ있는 서블릿 url 
+	     method: 데이터 전송을 위한 전송 방식 (GET or POST)-->
+	<form action="/HelloWorld/hs"
+		method="POST">
+		<label for="last_name">성</label>
+		<input type="text"
+			name="last_name"
+			id="last_name"
+			placeholder="성을 입력하세요."/><br/>
+		<label for="first_name">이름</label>
+		<input type="text"
+			name="first_name"
+			id="first_name"
+			placeholder="이름을 입력하세요."/><br/>
+		
+		<!-- 전송 버튼 -->
+		<input type="submit"
+				value="전송" /> 
+		</form>
+</body>
+</html>
